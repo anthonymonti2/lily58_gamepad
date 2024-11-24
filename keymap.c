@@ -90,27 +90,26 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // NAV
 /*
  * ,-----------------------------------------.                    ,-----------------------------------------.
- * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
+ * |  ESC |      |      |      |      |      |                    |      |      |      |      |      |      |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * |      |      |      |      |      |      |                    | REDO | PSTE |  UP  | CUT  | UNDO |      |
+ * |  TAB |      |  UP  |      |      |      |                    |      |      |      |      |      |      |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * |      | LGUI | LALT | LCTRL| LSFT | LOCK |-------.    ,-------| CAPS | LEFT | DOWN | RGHT | COPY |      |
+ * | LCTL | LEFT | DOWN | RGHT |      |      |-------.    ,-------|      |      |      |      |      |      |
  * |------+------+------+------+------+------|       |    |       |------+------+------+------+------+------|
- * |      | RGUI | RALT | RCTRL| RSFT |      |-------|    |-------|  INS | HOME | PBUP | PGDN | END  |      |
+ * | LSHFT|      |      |      |      |      |-------|    |-------|      |      |      |      |      |      |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
- *                   |      |      |      | /       /       \ ENTR \  | BSPC |  DEL |      |
+ *                   |      |      | SPCE | /  LALT /       \      \  |      |      |      |
  *                   |      |      |      |/       /         \      \ |      |      |      |
  *                   `----------------------------'           '------''--------------------'
  */
-/**
+
 [NAV] = LAYOUT(
-    U_NU,   U_NU,    U_NU,    U_NU,    U_NU,    U_NU,               U_NU,    U_NU,    U_NU,    U_NU,    U_NU,   U_NU, \
-    U_NU,   U_NA,    U_NA,    U_NA,    U_NA,    U_NA,               U_REDO,  U_PSTE,  KC_UP,   U_CUT,   U_UNDO, U_NU, \
-    U_NU,   KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, LLOCK,              KC_CAPS, KC_LEFT, KC_DOWN, KC_RGHT, U_COPY, U_NU, \
-    U_NU,   KC_RGUI, KC_RALT, KC_RCTL, KC_RSFT, U_NU, U_NU,U_NU,    KC_INS,  KC_HOME, KC_PGDN, KC_PGUP, KC_END, U_NU, \
-                          U_NA,    U_NA,    U_NA,     U_NA,KC_ENT,  KC_BSPC, KC_DEL,  U_NP \
+    KC_ESC,   U_NU,    U_NU,    U_NU,    U_NU,    U_NU,               U_NU,    U_NU,    U_NU,    U_NU,    U_NU,   U_NU, \
+    KC_TAB,   U_NU,    KC_UP,   U_NU,    U_NU,    U_NU,               U_NU,    U_NU,    U_NU,    U_NU,    U_NU,   U_NU, \
+    KC_LCTL,  KC_LEFT, KC_DOWN, KC_RGHT, U_NU,    U_NU,               U_NU,    U_NU,    U_NU,    U_NU,    U_NU,   U_NU, \
+    KC_LSFT,  U_NU,    U_NU,    U_NU,    U_NU,    U_NU, U_NU,U_NU,    U_NU,    U_NU,    U_NU,    U_NU,    U_NU,   U_NU, \
+                          _______, U_NA,  KC_SPC, KC_LALT   ,U_NA,    U_NA,    U_NA,     U_NA \
     ),
-**/
 // NUMBER
 /*
  * ,-----------------------------------------.                    ,-----------------------------------------.
